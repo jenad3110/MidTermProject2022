@@ -9,7 +9,7 @@ public class Numbers {
 
     public static void main(String[] args) throws SQLException {
 
-    Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb","root", "abcd123");
+    Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/world/","root", "abcd123");
         Statement stat = connection.createStatement();
 
         String s="select * city;";
