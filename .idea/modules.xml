@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../../../../Program Files (x86)/MySQL/Connector J 8.0/Connector J 8.0.iml" filepath="$PROJECT_DIR$/../../../../Program Files (x86)/MySQL/Connector J 8.0/Connector J 8.0.iml" />
       <module fileurl="file://$PROJECT_DIR$/midTermProject.iml" filepath="$PROJECT_DIR$/midTermProject.iml" />
     </modules>
   </component>
