@@ -1,8 +1,8 @@
 package algorithm;
 
 import java.util.Collections;
-        import java.util.LinkedList;
-        import java.util.List;
+import java.util.LinkedList;
+import java.util.List;
 
 public class Sort {
 
@@ -77,9 +77,8 @@ public class Sort {
 //        sorted = false; } } } }
 
 
-    public int [] mergeSort(int[] array){
+    public int [] mergeSort(int [] array,int n){
 
-       int n= 0;
         if (n < 2) {
             return array;
         }
@@ -93,8 +92,8 @@ public class Sort {
         for (int i = mid; i < array.length; i++) {
             r[i - mid] = array[i];
         }
-        mergeSort(l);
-        mergeSort(r);
+        mergeSort(l, mid);
+        mergeSort(r, array.length - mid);
 
         merge(array, l, r, mid, array.length - mid);
 
@@ -201,8 +200,7 @@ public class Sort {
     }
 
 
-    public int [] bucketSort(int[] array){
-
+    public int [] bucketSort(int [] array){
 
         int noOfBuckets=0;
         List[] buckets = new List[noOfBuckets];
@@ -253,4 +251,5 @@ public class Sort {
         for(int i=0; i<array.length; i++){
             System.out.println(array[i]);
         }
-    }}
+    }
+}

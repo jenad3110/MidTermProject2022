@@ -19,7 +19,7 @@ public class FortuneEmployee {
     public static void main(String[] args) throws Exception {
         EmployeeInfo employee = new EmployeeInfo();
         EmployeeInfo employee1 = new EmployeeInfo(7000,23);
-        EmployeeInfo employee2 = new EmployeeInfo("Mahmoud","Harley davidson");
+        EmployeeInfo employee2 = new EmployeeInfo("Mohamed","NASA");
         ConnectToSqlDB dt = new ConnectToSqlDB();
 //        dt.readDataBase("test","stName");
 //        dt.directDatabaseQueryExecute("select* from test","stID");

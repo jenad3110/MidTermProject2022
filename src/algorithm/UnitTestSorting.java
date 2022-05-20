@@ -1,19 +1,14 @@
 package algorithm;
 
-/*
-
-import org.testng.Assert;
-import org.testng.annotations.Test;
-
 import java.util.Arrays;
 
-import static org.testng.internal.junit.ArrayAsserts.assertArrayEquals;
+import static org.junit.Assert.assertEquals;
 
 public class UnitTestSorting {
 
     /*
       This class is used to help with unit testing of sorting algorithms from the Sort class
-     */    /*
+     */
     public static void main(String[] args) {
         int[] unSortedArray = {6, 9, 2, 5, 1, 0, 4};
         int[] sortedArray = {0, 1, 2, 4, 5, 6, 9};
@@ -28,7 +23,7 @@ public class UnitTestSorting {
 
         // Verify if the unsorted array is sorted by the selectionSort() method
         try {
-            Assert.assertEquals(sortedArray, unSortedArray, "ARRAY IS NOT SORTED... YET!\n***YOU GOT THIS!***");
+            assertEquals("ARRAY IS NOT SORTED... YET!\n***YOU GOT THIS!***", sortedArray, unSortedArray);
         } catch (Exception ex) {
             ex.getMessage();
         }
@@ -46,4 +41,3 @@ public class UnitTestSorting {
 
     }
 }
-*/

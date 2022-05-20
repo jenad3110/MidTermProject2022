@@ -66,7 +66,7 @@ public class Numbers {
             n = num.length;
             randomize(num, n);
 
-            algo.mergeSort(num);
+            algo.mergeSort(num, 6);
             long mergeSortExecutionTime = algo.executionTime;
             System.out.println("Total Execution Time of " + num.length + " numbers in MergeSort took: "
                     + mergeSortExecutionTime + " milliseconds");
