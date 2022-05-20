@@ -77,8 +77,9 @@ public class Sort {
 //        sorted = false; } } } }
 
 
-    public int [] mergeSort(int [] array,int n){
+    public int [] mergeSort(int[] array){
 
+       int n= 0;
         if (n < 2) {
             return array;
         }
@@ -92,8 +93,8 @@ public class Sort {
         for (int i = mid; i < array.length; i++) {
             r[i - mid] = array[i];
         }
-        mergeSort(l, mid);
-        mergeSort(r, array.length - mid);
+        mergeSort(l);
+        mergeSort(r);
 
         merge(array, l, r, mid, array.length - mid);
 
@@ -200,9 +201,10 @@ public class Sort {
     }
 
 
-    public int [] bucketSort(int [] array, int noOfBuckets){
+    public int [] bucketSort(int[] array){
 
 
+        int noOfBuckets=0;
         List[] buckets = new List[noOfBuckets];
 
         for(int i = 0; i < noOfBuckets; i++){

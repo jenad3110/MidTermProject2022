@@ -8,8 +8,9 @@ import java.sql.Connection;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
+import java.util.Queue;
 
-    public class ConnectToSqlDB {
+public class ConnectToSqlDB {
 
         public static Connection connect = null;
         public static Statement statement = null;
@@ -194,6 +195,9 @@ import java.util.Properties;
         }
 
 
+        }
+
+        public void insertDataFromQueueToSqlTable(Queue<String> animals, String endangered_animals, String animals1) {
         }
     }
 

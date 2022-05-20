@@ -1,7 +1,5 @@
 package MathProblems;
 
-import java.util.Scanner;
-
 public class Factorial {
 
     /*
@@ -27,4 +25,11 @@ public class Factorial {
     }
 
 
+    public static int facRecursion(int i) {
+        return 0;
+    }
+
+    public static int factorialIteration(int i) {
+        return 0;
+    }
 }
