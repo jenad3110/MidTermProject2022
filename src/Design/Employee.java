@@ -1,6 +1,5 @@
 package Design;
 
-
 public interface Employee  {
 
 	/*

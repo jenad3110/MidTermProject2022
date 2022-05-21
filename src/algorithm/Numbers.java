@@ -19,7 +19,7 @@ public class Numbers {
 
             ConnectToSqlDB connectToSqlDB = new ConnectToSqlDB();
 
-            int[] num = new int[10000];
+            int[] num = new int[1000000];
             storeRandomNumbers(num);
 
             // Selection Sort
@@ -103,10 +103,9 @@ public class Numbers {
             n = num.length;
             randomize(num, n);
 
-            algo.bucketSort(num);
+            algo.bucketSort(num, n);
             long bucketSortExecutionTime = algo.executionTime;
-            System.out.println("Total Execution Time of " + num.length + " numbers in BucketSort took: "
-                    + bucketSortExecutionTime + " milliseconds");
+            System.out.printf("Total Execution Time of " +num.length + "in BucketSort took: " +bucketSortExecutionTime + "milliseconds ");
 
             connectToSqlDB.insertDataFromArrayToSqlTable(num, "bucket_sort", "SortingNumbers");
             List<String> numbers6 = connectToSqlDB.readDataBase("bucket_sort", "SortingNumbers");
@@ -117,7 +116,7 @@ public class Numbers {
 
             algo.shellSort(num);
             long shellSortExecutionTime = algo.executionTime;
-            System.out.println("Total Execution Time of " + num.length + " numbers in Shell Sort took: "
+            System.out.println("Total Execution Time of " + num.length + " numbers in shell Sort took: "
                     + shellSortExecutionTime + " milliseconds");
 
 

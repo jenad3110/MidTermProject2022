@@ -200,9 +200,9 @@ public class Sort {
     }
 
 
-    public int [] bucketSort(int [] array){
+    public int [] bucketSort(int [] array, int noOfBuckets){
 
-        int noOfBuckets=0;
+
         List[] buckets = new List[noOfBuckets];
 
         for(int i = 0; i < noOfBuckets; i++){
@@ -251,5 +251,4 @@ public class Sort {
         for(int i=0; i<array.length; i++){
             System.out.println(array[i]);
         }
-    }
-}
+    }}
